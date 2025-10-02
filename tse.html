@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Taghazout Surf Expo is Morocco's premier surfing event. Experience surf competitions, beach activities, live music, and a vibrant coastal culture.">
+    <title>Taghazout Surf Expo</title>
+    <link rel="icon" sizes="16x16" href="favicon.png">
+    <link rel="stylesheet" href="tse.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="menulogo">
+                <!-- JS will dynamically create the hamburger menu -->
+                <img class="logo" src="logo.png" alt="Taghazout Surf Expo">
+            </div>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#weather">WEATHER</a></li>
+                <li><a href="#program">PROGRAM</a></li>
+                <li><a href="#location">LOCATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="hero-title">
+            Taghazout <br>
+            <span id="surfexpo">Surf Expo</span><br>
+            <span id="subtitle">3 days / Oct 15–17</span>
+        </h1>
+    </header>
+
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div>
+                <h2>ABOUT US</h2>
+                <p id="pargabout">
+                    Taghazout Surf Expo is a unique annual gathering that celebrates the vibrant surf culture of
+                    Morocco.
+                    Hosted in the world-famous village of Taghazout, the event brings together surfers, brands, and
+                    ocean
+                    lovers for three days of exhibitions, workshops, competitions, and live shows. The expo is not just
+                    about surfing — it’s a lifestyle experience that highlights local culture, promotes sustainable
+                    tourism,
+                    and connects professionals with passionate communities from around the world.
+                </p>
+            </div>
+            <img id="image02" src="image02.jpg" alt="Taghazout Surf Expo">
+        </section>
+
+        <!-- PROGRAM SECTION -->
+        <section id="program">
+            <h2>PROGRAM</h2>
+            <div id="pargprogram">
+                <p><span id="day">Day 01 ______________________</span><br>
+                    09:00 – 10:00 | 🌊 Surf Session (Beginners)<br>
+                    11:00 – 12:00 | 🎤 Workshop: Sustainable Surfing<br>
+                    15:00 – 17:00 | 🏄 Surf Competition – Intermediate<br>
+                    18:00 – 20:00 | 🎶 Live Music & Food Market
+                </p>
+                <p><span id="day">Day 02 ______________________</span><br>
+                    09:00 – 10:30 | 🌊 Surf Session (Advanced)<br>
+                    11:00 – 12:30 | 🎤 Workshop: Surf Photography<br>
+                    14:30 – 16:30 | 🏄 Surf Competition – Advanced<br>
+                    17:00 – 19:00 | 🎨 Art & Surf Culture Exhibition
+                </p>
+                <p><span id="day">Day 03 ______________________</span><br>
+                    09:00 – 11:00 | 🌊 Family Surf Fun<br>
+                    11:30 – 13:00 | 🎤 Workshop: Surfboard Design<br>
+                    14:00 – 16:00 | 🏆 Final Competition & Awards<br>
+                    16:30 – 18:00 | 🎶 Closing Ceremony & Live Music
+                </p>
+            </div>
+        </section>
+
+        <!-- WEATHER SECTION -->
+        <section id="weather">
+            <h2>WEATHER</h2>
+            <p id="parweather">Check the latest surf and weather conditions in Taghazout.</p>
+            <div class="weather-container">
+                <!-- JS will populate weather cards here -->
+            </div>
+        </section>
+
+        <!-- LOCATION SECTION -->
+        <section id="location">
+            <div>
+                <h2>LOCATION</h2>
+                <p id="loca">
+                    Location — Taghazout Beach <br>
+                    Taghazout is a small fishing village on Morocco’s Atlantic coast, famous worldwide for its surfing
+                    spots.
+                    With sunny weather, sandy beaches, and waves for all levels, it has become a top destination for
+                    surfers
+                    and travelers. The event takes place at Taghazout Beach, a vibrant location where visitors can enjoy
+                    the
+                    ocean, relax on the sand, and explore the local culture and hospitality.
+                </p>
+                <a id="linkmaps" href="https://maps.app.goo.gl/DRMp5mg8r5a5oeYQA" target="_blank">Click here to GO
+                    Taghazout 🗺️</a>
+            </div>
+            <img id="taghazout" src="taghazout.jpg" alt="Taghazout Surf Expo">
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <p id="loca">Get in touch with us for more information about the event.</p>
+            <form>
+                <div class="formgroup">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+                </div>
+                <div class="formgroup">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+                </div>
+                <div class="formgroup">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="formgroup">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+123 456 7890">
+                </div>
+                <div class="formgroup">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Taghazout Surf Expo. All rights reserved.</p>
+    </footer>
+
+    <!-- LINK JS -->
+    <script src="tse.js"></script>
+</body>
+
+</html>

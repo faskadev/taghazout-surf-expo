@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OriginalSurfer-Regular';
+    src: url('OriginalSurfer-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Lato-Regular', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.header {
+    position: relative;
+    background-image: url("background01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-title {
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #1CA9C9;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 2;
+    line-height: 1;
+}
+
+#surfexpo {
+    font-family: 'Lato-Regular', sans-serif;
+    color: #D4A373;
+    font-size: 3rem;
+}
+
+#subtitle {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+    /*background-color: rgba(0, 0, 0, 0.6); */
+
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 20Px;
+
+}
+
+nav ul li a:hover {
+
+    color: #D4A373;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    font-family: 'Lato-Regular', sans-serif;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #222;
+    text-shadow: 2px 2px 4px #070707;
+}
+
+#about {
+    background-color: #D4A373;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+#pargabout {
+    font-family: 'OriginalSurfer-Regular';
+    color: #fff;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#image02 {
+    border-radius: 32px;
+    width: 300px;
+    box-shadow: 5px 10px 5px #111;
+}
+
+#program {
+    padding-top: 18px;
+    background-color: #1CA9C9;
+    padding-bottom: 18px;
+}
+
+#pargprogram {
+    font-family: 'OriginalSurfer-Regular';
+    color: #fff;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10;
+}
+
+#day {
+    color: #070502;
+    text-shadow: 0px 2px 2px #070707;
+}
+
+#weather {
+    background-color: #D4A373;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+#parweather {
+    font-family: 'OriginalSurfer-Regular';
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-size: 25 px;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.weather-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Lato-Regular', Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.weather-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+#location {
+    background-color: #1CA9C9;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+#loca {
+    font-family: 'OriginalSurfer-Regular';
+    color: #fff;
+    line-height: 2;
+    text-align: justify;
+}
+
+#taghazout {
+    border-radius: 32px;
+    width: 300px;
+    box-shadow: 5px 10px 5px #111;
+}
+
+#linkmaps {
+    text-decoration: none;
+    color: #000000;
+    border: 3px solid #000000;
+    background-color: #D4A373;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 27px;
+}
+
+#contact {
+    background-color: #D4A373;
+    background-image: url("background03.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+#formgroup {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px;
+    color: #000000;
+    font-family: 'OriginalSurfer-Regular';
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#message {
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#submit {
+    font-family: 'Montserrat-Bold';
+    font-size: large;
+    padding: 10px;
+    display: grid;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: #1CA9C9;
+}
+
+footer {
+    background: #D4A373;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+}
+
+.menu-toggle {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
