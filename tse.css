@@ -34,6 +34,10 @@ body {
     height: auto;
 }
 
+main {
+    background-image: url("background04.jpg");
+}
+
 .header {
     position: relative;
     background-image: url("background01.jpg");
@@ -82,7 +86,7 @@ nav {
     justify-content: space-between;
     padding: 10px 20px;
     z-index: 1000;
-    /*background-color: rgba(0, 0, 0, 0.6); */
+    background-color: rgba(0, 0, 0, 0.6); 
 
 
 }
@@ -258,6 +262,7 @@ section h2 {
 #formgroup {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 label {
@@ -265,16 +270,20 @@ label {
     color: #000000;
     font-family: 'OriginalSurfer-Regular';
     font-weight: bold;
+    display: block;
+    
 }
 
 input {
     padding: 10px;
     border-radius: 25px;
+    width: 100%;
 }
 
 #message {
     padding: 10px;
     border-radius: 25px;
+    width: 100%;
 }
 
 #submit {
